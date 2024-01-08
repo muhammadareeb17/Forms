@@ -10,24 +10,24 @@
 <body>
     <form id="user-registrstion-form">
         <h1>User Registration Form </h1>
-        <p>First Name:<input required id="First-name" name="First-name" type="text"></p>
+        <p>First Name:<input required id="First-name" name="First-name" type="hidden">
         <p>Last Name:<input required id="last-name" name="last-name" type="text"></p>
         <p> Password:<input id="user-pass" name="password" required type="password" minlength="8" maxlength="50"></p>
         <p>Bio:<textarea id="user-bio" name="bio"></textarea></p>
         <p>
         <fieldset>
             <legend>Gender:</legend>
-            <input type="radio" name="Gender" value="Male" checked>Male <br>
-            <input type="radio" name="Gender" value="Female"> Female <br>
-            <input type="radio" name="Gender" value="Other">Other <br>
+            <label for="male"><input  type="radio"  id="male" type="radio" name="Gender" value="Male" checked="checked">Male</label> <br>
+            <label for="female"><input id="female" type="radio" name="Gender" value="Female" > Female </label><br>
+             <label for="other"><input id="other" type="radio" name="Gender" value="Other">Other </label><br>
         </fieldset>
         </p>
         <p>
         <fieldset>
             <legend>Interests:</legend>
-            <input type="checkbox" name="Interests" value="music">Music <br>
-            <input type="checkbox" name="Interests" value="sports"> Sports <br>
-            <input type="checkbox" name="Interests" value="reading"> Reading <br>
+             <label for="music"><input id="music" type="checkbox" name="Interests" value="Music">Music </label><br>
+           <label for="sports"> <input id="sports" type="checkbox" name="Interests" value="Sports"> Sports</label> <br>
+         <label for="reading"><input id="reading" type="checkbox" name="Interests" value="Reading"> Reading </label><br>
         </fieldset>
         </p>
         <!-- Names of Country copy and paste from internet-->
@@ -284,7 +284,7 @@
         </p>
         <p>Preferred Colours
             <select id="colours" name="colours" multiple="multiple" size="4">
-                <option value="Red">Red</option>
+                <option value="Red" selected >Red</option>
                 <option value="Blue">Blue</option>
                 <option value="Green">Green</option>
                 <option value="Yellow">Yellow</option>
