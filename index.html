@@ -10,13 +10,13 @@
 <body>
     <form id="user-registrstion-form">
         <h1>User Registration Form </h1>
-        <p>First Name:<input required id="First-name" name="First-name" type="hidden">
-        <p>Last Name:<input required id="last-name" name="last-name" type="text"></p>
-        <p> Password:<input id="user-pass" name="password" required type="password" minlength="8" maxlength="50"></p>
-        <p>Bio:<textarea id="user-bio" name="bio"></textarea></p>
+        <p>First Name:<input required id="First-name" name="First-name" type="text" maxlength="80" minlength="2">
+        <p>Last Name:<input required id="last-name" name="last-name" type="text" maxlength="80" minlength="2"></p>
+        <p> Password:<input id="user-pass" name="password" required type="password" minlength="8" maxlength="50" required></p>
+        <p>Bio:<textarea id="user-bio" name="bio" minlength="20" maxlength="300"></textarea></p>
         <p>
         <fieldset>
-            <legend>Gender:</legend>
+            <legend>Gender:</legend> 
             <label for="male"><input  type="radio"  id="male" type="radio" name="Gender" value="Male" checked="checked">Male</label> <br>
             <label for="female"><input id="female" type="radio" name="Gender" value="Female" > Female </label><br>
              <label for="other"><input id="other" type="radio" name="Gender" value="Other">Other </label><br>
